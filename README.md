@@ -1,5 +1,5 @@
 # Dotfiles
-![[images/2.png]]
+![[https://github.com/HayKor/dotfiles/tree/main/images/2.png]]
 
 ### Used dependencies:
 + i3-gaps: 
