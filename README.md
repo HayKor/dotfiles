@@ -1,5 +1,5 @@
 # Dotfiles
-![Showcase](https://github.com/HayKor/dotfiles/tree/main/images/2.png?raw=true)
+![image](https://github.com/HayKor/dotfiles/assets/63199429/00a65ef6-fa7c-470e-b353-e2e8cc96c155)
 
 ### Used dependencies:
 + [i3-gaps](https://github.com/Airblader/i3) 
