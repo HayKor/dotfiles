@@ -10,4 +10,4 @@
 
 ### Fonts:
 + [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-+ [Font Awesome](https://fontawesome.com/)
++ [Font Awesome 6](https://fontawesome.com/)
