@@ -11,3 +11,9 @@
 ### Fonts:
 + [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 + [Font Awesome 6](https://fontawesome.com/)
+
+### Nvim (NVChad needed properties):
+```shell
+sudo apt install python3-venv
+sudo apt install nodejs # watch Nodesource guide for this one
+```
