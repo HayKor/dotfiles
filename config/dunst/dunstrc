@@ -4,7 +4,7 @@
   shrink = no
   padding = 20
   horizontal_padding = 20
-  geometry = "300x5-30+20"
+  geometry = "300x5-30+30"
   
   width = 300
   offset = 16x60
