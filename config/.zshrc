@@ -10,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # ZSH_CUSTOM=/path/to/new-custom-folder
 # Standard plugins can be found in $ZSH/plugins/
@@ -19,7 +19,9 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Aliases
+alias cd=z
 
-eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/catppuccin.omp.json)"
+# eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/catppuccin.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.toml)"
+eval "$(zoxide init zsh)"
