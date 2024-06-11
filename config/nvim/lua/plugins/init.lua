@@ -43,4 +43,16 @@ return {
             },
         },
     },
+    {
+        "NvChad/nvim-colorizer.lua",
+        opts = {
+            user_default_options = {
+                mode = "background",
+                RGB = true, -- Enable RGB color notation support
+                RRGGBB = true, -- Enable RRGGBB color notation support
+                names = false, -- Enable color name highlighting (e.g., "red", "blue", etc.)
+                css = true, -- Disable CSS color notation support
+            },
+        },
+    },
 }
