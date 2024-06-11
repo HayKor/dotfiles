@@ -57,6 +57,11 @@ final_space = true
       revert_icon = ' '
       tag_icon = ' '
 
+[transient_prompt]
+  foreground = 'p:black'
+  background = 'transparent'
+  template = '<p:nord-blue></><,p:nord-blue><p:wight></> <p:text>{{ .UserName }}@{{ .HostName }}</></><p:nord-blue></> '
+
 [palette]
   lavender = '#B7BDF8'
   light-nord = '#88c0d0'
