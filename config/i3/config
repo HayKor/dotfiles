@@ -29,7 +29,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Picom
-exec_always --no-startup-id picom -b --experimental-backends --config ~/.config/picom/picom.conf
+exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf --experimental-backends &
 
 # Wallpapers
 exec_always feh --bg-fill $HOME/Pictures/Wallpapers/nord-wallpapers-v0-mpyy5m6t1t9a1.webp
@@ -74,9 +74,9 @@ bindsym XF86MonBrightnessUp exec --no-startup-id sh -c 'sudo brightnessctl set +
 bindsym XF86MonBrightnessDown exec --no-startup-id sh -c 'sudo brightnessctl set 10%-'
 
 # Set up screenshots and partial screenshots
-bindsym --release Print exec sh -c 'QT_QPA_PLATFORM=xcb flameshot gui'
-#bindsym --release Print exec maim -u ~/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
-#bindsym --release Shift+Print exec maim -u -s ~/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
+# bindsym --release Print exec sh -c 'QT_QPA_PLATFORM=xcb flameshot gui | xclip -selection clipboard -t image/png'
+bindsym --release Print exec --no-startup-id "maim | xclip -selection clipboard -t image/png; xclip -selection -t image/png -o > ~/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png"
+bindsym --release Shift+Print exec --no-startup-id "maim -s | xclip -selection clipboard -t image/png; xclip -selection -t image/png -o > ~/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -214,8 +214,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# default_border pixel 4
+
 # No borders
 for_window [class="^.*"] border pixel 0
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #81a1c1 #285577 #ffffff #2e9ef4   #285577
 
 # Autoopening on specific workspaces (xprop | grep CLASS)
 assign [class="Code"] $ws3
