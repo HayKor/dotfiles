@@ -7,6 +7,7 @@
 + [polybar](https://github.com/polybar/polybar)
 + [rofi](https://github.com/davatorium/rofi)
 + [dunst](https://github.com/dunst-project/dunst)
++ [oh-my-posh](https://ohmyposh.dev/)
 
 ### Fonts:
 + [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
