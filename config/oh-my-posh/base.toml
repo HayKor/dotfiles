@@ -1,0 +1,67 @@
+#:schema https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+
+version = 2
+final_space = true
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+
+  [[blocks.segments]]
+    type = 'os'
+    style = 'diamond'
+    powerline_symbol = ''
+    foreground = 'p:wight'
+    background = 'p:nord-blue'
+    leading_diamond = ''
+    template = '{{.Icon}} '
+
+  [[blocks.segments]]
+    type = 'session'
+    style = 'diamond'
+    powerline_symbol = ''
+    foreground = 'p:text'
+    background = 'p:nord-blue'
+    template = '{{ .UserName }}@{{ .HostName }}'
+
+  [[blocks.segments]]
+    type = 'path'
+    style = 'powerline'
+    powerline_symbol = ''
+    foreground = 'p:text'
+    background = 'p:light-nord'
+    template = ' {{ .Path }}'
+
+    [blocks.segments.properties]
+      folder_icon = ''
+      home_icon = '~'
+      style = 'agnoster_short'
+
+  [[blocks.segments]]
+    type = 'git'
+    style = 'powerline'
+    powerline_symbol = ''
+    foreground = 'p:text'
+    background = 'p:nord-blue'
+    template =  " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} "
+
+    [blocks.segments.properties]
+      branch_icon = ' '
+      cherry_pick_icon = ' '
+      commit_icon = ' '
+      fetch_status = true
+      fetch_upstream_icon = false
+      merge_icon = ' '
+      no_commits_icon = ' '
+      rebase_icon = ' '
+      revert_icon = ' '
+      tag_icon = ' '
+
+[palette]
+  lavender = '#B7BDF8'
+  light-nord = '#88c0d0'
+  nord-blue = '#81a1c1'
+  os = '#ACB0BE'
+  pink = '#F5BDE6'
+  text = '#494D64'
+  wight = '#FFFFFF'
