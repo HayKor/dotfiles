@@ -11,7 +11,7 @@
   height = 100
   origin = top-right
 
-  frame_width = 1
+  frame_width = 3
   separator_height = 2
   frame_color = "#161320"
   separator_color = "#161320"
@@ -34,7 +34,7 @@
   history_length = 6
   title = Dunst
   class = Dunst
-  corner_radius = 0
+  corner_radius = 15
 
   mouse_left_click = close_current
   mouse_middle_click = do_action
@@ -42,18 +42,18 @@
 
 [urgency_low]
   background = "#1E1E2E"
-  frame_color = "#989CFA"
+  frame_color = "#81a1c1"
   foreground = "#D9E0EE"
   timeout = 5
 
 [urgency_normal]
   background = "#1E1E2E"
-  frame_color = "#989CFA"
+  frame_color = "#81a1c1"
   foreground = "#D9E0EE"
   timeout = 5
 
 [urgency_critical]
   background = "#1E1E2E"
-  frame_color = "#989CFA"
+  frame_color = "#81a1c1"
   foreground = "#D9E0EE"
   timeout = 10
