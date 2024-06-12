@@ -11,7 +11,7 @@ final_space = true
     type = 'os'
     style = 'diamond'
     powerline_symbol = ''
-    foreground = 'p:wight'
+    foreground = 'p:white'
     background = 'p:nord-blue'
     leading_diamond = ''
     template = '{{.Icon}} '
@@ -60,7 +60,7 @@ final_space = true
 [transient_prompt]
   foreground = 'p:black'
   background = 'transparent'
-  template = '<p:nord-blue></><,p:nord-blue><p:wight></> <p:text>{{ .UserName }}@{{ .HostName }}</></><p:nord-blue></> '
+  template = '<p:nord-blue></><,p:nord-blue><p:white></> <p:text>{{ .UserName }}@{{ .HostName }}</></><p:nord-blue></> '
 
 [palette]
   lavender = '#B7BDF8'
@@ -69,4 +69,4 @@ final_space = true
   os = '#ACB0BE'
   pink = '#F5BDE6'
   text = '#494D64'
-  wight = '#FFFFFF'
+  white = '#FFFFFF'

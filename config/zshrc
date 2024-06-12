@@ -15,13 +15,12 @@ HYPHEN_INSENSITIVE="true"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting zoxide)
 
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
-alias cd=z
 
 # eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/catppuccin.omp.json)"
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.toml)"
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
