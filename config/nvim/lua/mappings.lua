@@ -20,6 +20,7 @@ map({ "n", "t" }, "<A-i>", function()
                 cpp = "clear && g++ -o out "
                     .. file
                     .. " && ./out"
+                    .. " && rm -f out"
                     .. " && exit",
                 lua = "lua5.4 " .. file .. " && exit",
             }
