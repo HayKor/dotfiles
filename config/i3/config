@@ -220,7 +220,7 @@ bindsym $mod+r mode "resize"
 for_window [class="^.*"] border pixel 4
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #5e81ac #5e81ac #000000 #5e81ac #81a1c1
+client.focused          #81a1c1 #81a1c1 #CDD6F4 #81a1c1 #81a1c1
 
 
 # Autoopening on specific workspaces (xprop | grep CLASS)
