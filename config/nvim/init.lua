@@ -43,3 +43,6 @@ require "nvchad.autocmds"
 vim.schedule(function()
     require "mappings"
 end)
+
+-- Enable relative numbers
+vim.wo.relativenumber = true

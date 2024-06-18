@@ -74,7 +74,6 @@ bindsym XF86MonBrightnessUp exec --no-startup-id sh -c 'sudo brightnessctl set +
 bindsym XF86MonBrightnessDown exec --no-startup-id sh -c 'sudo brightnessctl set 10%-'
 
 # Set up screenshots and partial screenshots
-# bindsym --release Print exec sh -c 'QT_QPA_PLATFORM=xcb flameshot gui | xclip -selection clipboard -t image/png'
 bindsym --release Print exec --no-startup-id "maim | xclip -selection clipboard -t image/png; xclip -selection -t image/png -o > ~/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png"
 bindsym --release Shift+Print exec --no-startup-id "maim -s | xclip -selection clipboard -t image/png; xclip -selection -t image/png -o > ~/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png"
 
