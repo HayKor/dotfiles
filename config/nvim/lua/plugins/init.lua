@@ -55,4 +55,17 @@ return {
             },
         },
     },
+    {
+        "nvim-tree/nvim-tree.lua",
+        opts = {
+            view = {
+                width = 25,
+            },
+            git = {
+                enable = true,
+                ignore = false,
+                timeout = 500,
+            },
+        },
+    },
 }
